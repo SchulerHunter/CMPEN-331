@@ -240,8 +240,8 @@ def decLB(instruction):
     HWComponents.CONTROL.branchSense = False # beq = True; bne = False
     HWComponents.CONTROL.memToReg = True # Does this instruction get its result from memory
     HWComponents.REGWritePort.writeEnable = False # Does this instruction write to a register?
-    HWComponents.REGWritePort.address = HWComponents.CONTROL.RT # RD, RT, RA
-    HWComponents.ALUPortB = HWComponents.CONTROL.SHAMT
+    HWComponents.REGWritePort.address = HWComponents.CONTROL.RD # RD, RT, RA
+    HWComponents.ALUPortB = HWComponents.CONTROL.imm16s
     HWComponents.MemWritePort.writeEnable = False
     
 def decLW(instruction):
@@ -257,9 +257,9 @@ def decLW(instruction):
     HWComponents.CONTROL.isLink = False # JAL, JALR = True -- writes return address to $31 aka $ra
     HWComponents.CONTROL.branchSense = False # beq = True; bne = False
     HWComponents.CONTROL.memToReg = True # Does this instruction get its result from memory
-    HWComponents.REGWritePort.writeEnable = False # Does this instruction write to a register?
-    HWComponents.REGWritePort.address = HWComponents.CONTROL.RT # RD, RT, RA
-    HWComponents.ALUPortB = HWComponents.CONTROL.SHAMT
+    HWComponents.REGWritePort.writeEnable = True # Does this instruction write to a register?
+    HWComponents.REGWritePort.address = HWComponents.CONTROL.RD # RD, RT, RS
+    HWComponents.ALUPortB = HWComponents.CONTROL.imm16s
     HWComponents.MemWritePort.writeEnable = False
 
 def decLBU(instruction):
@@ -275,9 +275,9 @@ def decLBU(instruction):
     HWComponents.CONTROL.isLink = False # JAL, JALR = True -- writes return address to $31 aka $ra
     HWComponents.CONTROL.branchSense = False # beq = True; bne = False
     HWComponents.CONTROL.memToReg = True # Does this instruction get its result from memory
-    HWComponents.REGWritePort.writeEnable = False # Does this instruction write to a register?
-    HWComponents.REGWritePort.address = HWComponents.CONTROL.RT # RD, RT, RA
-    HWComponents.ALUPortB = HWComponents.CONTROL.SHAMT
+    HWComponents.REGWritePort.writeEnable = True # Does this instruction write to a register?
+    HWComponents.REGWritePort.address = HWComponents.CONTROL.RD # RD, RT, RA
+    HWComponents.ALUPortB = HWComponents.CONTROL.imm16s
     HWComponents.MemWritePort.writeEnable = False
     
 def decSB(instruction):
@@ -293,10 +293,10 @@ def decSB(instruction):
     HWComponents.CONTROL.isLink = False # JAL, JALR = True -- writes return address to $31 aka $ra
     HWComponents.CONTROL.branchSense = False # beq = True; bne = False
     HWComponents.CONTROL.memToReg = False # Does this instruction get its result from memory
-    HWComponents.REGWritePort.writeEnable = True # Does this instruction write to a register?
+    HWComponents.REGWritePort.writeEnable = False # Does this instruction write to a register?
     HWComponents.REGWritePort.address = HWComponents.CONTROL.RD # RD, RT, RA
-    HWComponents.ALUPortB = HWComponents.CONTROL.SHAMT
-    HWComponents.MemWritePort.writeEnable = False
+    HWComponents.ALUPortB = HWComponents.CONTROL.imm16s
+    HWComponents.MemWritePort.writeEnable = True
 
 def decSW(instruction):
     simStats.stats.stores = simStats.stats.stores + 1 # count as store
@@ -311,10 +311,10 @@ def decSW(instruction):
     HWComponents.CONTROL.isLink = False # JAL, JALR = True -- writes return address to $31 aka $ra
     HWComponents.CONTROL.branchSense = False # beq = True; bne = False
     HWComponents.CONTROL.memToReg = False # Does this instruction get its result from memory
-    HWComponents.REGWritePort.writeEnable = True # Does this instruction write to a register?
+    HWComponents.REGWritePort.writeEnable = False # Does this instruction write to a register?
     HWComponents.REGWritePort.address = HWComponents.CONTROL.RD # RD, RT, RA
-    HWComponents.ALUPortB = HWComponents.CONTROL.SHAMT
-    HWComponents.MemWritePort.writeEnable = False
+    HWComponents.ALUPortB = HWComponents.CONTROL.imm16s
+    HWComponents.MemWritePort.writeEnable = True
     
 #specialZero functions
 def decSLL(instruction):
