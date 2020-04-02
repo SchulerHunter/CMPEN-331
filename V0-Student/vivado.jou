@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Mar 24 20:47:41 2020
+# Process ID: 12268
+# Current directory: D:/Git/CMPEN-331/V0-Student
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12796 D:\Git\CMPEN-331\V0-Student\V0.xpr
+# Log file: D:/Git/CMPEN-331/V0-Student/vivado.log
+# Journal file: D:/Git/CMPEN-331/V0-Student\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Git/CMPEN-331/V0-Student/V0.xpr
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_simulation
+source Top.tcl
+close_sim

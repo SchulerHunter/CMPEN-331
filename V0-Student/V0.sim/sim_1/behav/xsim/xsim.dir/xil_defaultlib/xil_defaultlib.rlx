@@ -1,0 +1,17 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/Git/CMPEN-331/V0-Student/V0.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/ALU.v,1585024665,verilog,,D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/CONTROL.v,,ALU,,,,,,,,
+D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/CONTROL.v,1585023026,verilog,,D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/DMEM.v,,CONTROL,,,,,,,,
+D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/DMEM.v,1585022695,verilog,,D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/IMEM.v,,DMEM,,,,,,,,
+D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/IMEM.v,1585022666,verilog,,D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/IncFour.v,,IMEM,,,,,,,,
+D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/IncFour.v,1584997059,verilog,,D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/REGFILE.v,,IncFour,,,,,,,,
+D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/REGFILE.v,1585015543,verilog,,D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/SYSCALL_EMU.v,,REGFILE,,,,,,,,
+D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/SYSCALL_EMU.v,1585058612,verilog,,D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/SZExtender.v,,SYSCALL_EMU,,,,,,,,
+D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/SZExtender.v,1584994548,verilog,,D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/ScaledAdder.v,,SZExtender,,,,,,,,
+D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/ScaledAdder.v,1585020946,verilog,,D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/reg32.v,,ScaledAdder,,,,,,,,
+D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/Top.v,1585023724,verilog,,,,Top,,,,,,,,
+D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/reg32.v,1585020612,verilog,,D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/reg64.v,,PC32,,,,,,,,
+D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/reg64.v,1585020641,verilog,,D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/Top.v,,HILO64,,,,,,,,

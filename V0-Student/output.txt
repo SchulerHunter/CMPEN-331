@@ -1,0 +1,142 @@
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Git/CMPEN-331/V0-Student/V0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Git/CMPEN-331/V0-Student/V0.sim/sim_1/behav/xsim/mem.mem'
+INFO: [SIM-utils-43] Exported 'D:/Git/CMPEN-331/V0-Student/V0.sim/sim_1/behav/xsim/hilo.mem'
+INFO: [SIM-utils-43] Exported 'D:/Git/CMPEN-331/V0-Student/V0.sim/sim_1/behav/xsim/pc.mem'
+INFO: [SIM-utils-43] Exported 'D:/Git/CMPEN-331/V0-Student/V0.sim/sim_1/behav/xsim/reg.mem'
+INFO: [SIM-utils-43] Exported 'D:/Git/CMPEN-331/V0-Student/V0.sim/sim_1/behav/xsim/mem.mem'
+INFO: [SIM-utils-43] Exported 'D:/Git/CMPEN-331/V0-Student/V0.sim/sim_1/behav/xsim/hilo.mem'
+INFO: [SIM-utils-43] Exported 'D:/Git/CMPEN-331/V0-Student/V0.sim/sim_1/behav/xsim/pc.mem'
+INFO: [SIM-utils-43] Exported 'D:/Git/CMPEN-331/V0-Student/V0.sim/sim_1/behav/xsim/reg.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Git/CMPEN-331/V0-Student/V0.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/DMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/IMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/IncFour.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IncFour
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/REGFILE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGFILE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/SYSCALL_EMU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SYSCALL_EMU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/SZExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SZExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/ScaledAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ScaledAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/reg32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/reg64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HILO64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/V0-Student/V0.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Git/CMPEN-331/V0-Student/V0.sim/sim_1/behav/xsim'
+"xelab -wto e6590b9e358047b4a3d2d99c339d3324 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Top_behav xil_defaultlib.Top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto e6590b9e358047b4a3d2d99c339d3324 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Top_behav xil_defaultlib.Top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC32
+Compiling module xil_defaultlib.HILO64
+Compiling module xil_defaultlib.REGFILE
+Compiling module xil_defaultlib.IMEM
+Compiling module xil_defaultlib.DMEM
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.SZExtender
+Compiling module xil_defaultlib.IncFour
+Compiling module xil_defaultlib.ScaledAdder
+Compiling module xil_defaultlib.CONTROL
+Compiling module xil_defaultlib.SYSCALL_EMU
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Top_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/Git/CMPEN-331/V0-Student/V0.sim/sim_1/behav/xsim/xsim.dir/Top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Git/CMPEN-331/V0-Student/V0.sim/sim_1/behav/xsim/xsim.dir/Top_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Mar 24 21:29:47 2020. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Mar 24 21:29:47 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 743.539 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Git/CMPEN-331/V0-Student/V0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Top_behav -key {Behavioral:sim_1:Functional:Top} -tclbatch {Top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source Top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+fffffffc
+00000bad
+00000001
+00000000
+00000000
+00000001
+0000eec5
+0000aa80
+feedeec5
+0000ffff
+00005555
+00010000
+ffffffde
+ffffffad
+ffffffed
+deadbeef
+feedeec5
+000000de
+000000ad
+000000ed
+aa0000ff
+aa00aaff
+badc0de5
+c0de5bad
+00feedee
+fffeedee
+b9c9fcaa
+4411e0e0
+4411e0e0
+bacc0cc5
+fefdefe5
+4431e320
+0102101a
+00000000
+00000001
+Emulating Exit Syscall, exiting now
+$finish called at time : 719 ns : File "D:/Git/CMPEN-331/V0-Student/V0.srcs/sources_1/new/SYSCALL_EMU.v" Line 21
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 796.559 ; gain = 41.902
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 796.559 ; gain = 53.020
