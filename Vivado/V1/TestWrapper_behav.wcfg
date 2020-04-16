@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TestWrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TestWrapper" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="453850fs"></ZoomStartTime>
+      <ZoomEndTime time="457631fs"></ZoomEndTime>
+      <Cursor1Time time="455291fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="459"></NameColumnWidth>
+      <ValueColumnWidth column_width="394"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="114" />
+   <wvobject fp_name="/TestWrapper/atop/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/HazardDetected" type="logic">
+      <obj_property name="ElementShortName">HazardDetected</obj_property>
+      <obj_property name="ObjectShortName">HazardDetected</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/NoHazardDetected" type="logic">
+      <obj_property name="ElementShortName">NoHazardDetected</obj_property>
+      <obj_property name="ObjectShortName">NoHazardDetected</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/IMEM_READY" type="logic">
+      <obj_property name="ElementShortName">IMEM_READY</obj_property>
+      <obj_property name="ObjectShortName">IMEM_READY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/DMEM_READY" type="logic">
+      <obj_property name="ElementShortName">DMEM_READY</obj_property>
+      <obj_property name="ObjectShortName">DMEM_READY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/IBits" type="array">
+      <obj_property name="ElementShortName">IBits[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IBits[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/NextInst" type="array">
+      <obj_property name="ElementShortName">NextInst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NextInst[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/NOPbits" type="array">
+      <obj_property name="ElementShortName">NOPbits[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NOPbits[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/PCp4" type="array">
+      <obj_property name="ElementShortName">PCp4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PCp4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/PC" type="array">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/NextPC" type="array">
+      <obj_property name="ElementShortName">NextPC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NextPC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/ID_IBits" type="array">
+      <obj_property name="ElementShortName">ID_IBits[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_IBits[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/Opcode" type="array">
+      <obj_property name="ElementShortName">Opcode[5:0]</obj_property>
+      <obj_property name="ObjectShortName">Opcode[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/RS" type="array">
+      <obj_property name="ElementShortName">RS[4:0]</obj_property>
+      <obj_property name="ObjectShortName">RS[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/RT" type="array">
+      <obj_property name="ElementShortName">RT[4:0]</obj_property>
+      <obj_property name="ObjectShortName">RT[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/RD" type="array">
+      <obj_property name="ElementShortName">RD[4:0]</obj_property>
+      <obj_property name="ObjectShortName">RD[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/ID_SHAMT" type="array">
+      <obj_property name="ElementShortName">ID_SHAMT[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_SHAMT[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/FUNCT" type="array">
+      <obj_property name="ElementShortName">FUNCT[5:0]</obj_property>
+      <obj_property name="ObjectShortName">FUNCT[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/IMM" type="array">
+      <obj_property name="ElementShortName">IMM[15:0]</obj_property>
+      <obj_property name="ObjectShortName">IMM[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/JBITS" type="array">
+      <obj_property name="ElementShortName">JBITS[25:0]</obj_property>
+      <obj_property name="ObjectShortName">JBITS[25:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/EQ" type="logic">
+      <obj_property name="ElementShortName">EQ</obj_property>
+      <obj_property name="ObjectShortName">EQ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/RP1Out" type="array">
+      <obj_property name="ElementShortName">RP1Out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RP1Out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/RP2Out" type="array">
+      <obj_property name="ElementShortName">RP2Out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RP2Out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/RP1Forwarded" type="array">
+      <obj_property name="ElementShortName">RP1Forwarded[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RP1Forwarded[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/RP2Forwarded" type="array">
+      <obj_property name="ElementShortName">RP2Forwarded[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RP2Forwarded[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/NRP1Forwarded" type="array">
+      <obj_property name="ElementShortName">NRP1Forwarded[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NRP1Forwarded[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/NRP2Forwarded" type="array">
+      <obj_property name="ElementShortName">NRP2Forwarded[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NRP2Forwarded[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/NRTVAL" type="array">
+      <obj_property name="ElementShortName">NRTVAL[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NRTVAL[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/ExtendedImmediate" type="array">
+      <obj_property name="ElementShortName">ExtendedImmediate[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ExtendedImmediate[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/BranchTarget" type="array">
+      <obj_property name="ElementShortName">BranchTarget[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BranchTarget[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/ID_PCp4" type="array">
+      <obj_property name="ElementShortName">ID_PCp4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_PCp4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/JumpTarget" type="array">
+      <obj_property name="ElementShortName">JumpTarget[31:0]</obj_property>
+      <obj_property name="ObjectShortName">JumpTarget[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/JorRTarget" type="array">
+      <obj_property name="ElementShortName">JorRTarget[31:0]</obj_property>
+      <obj_property name="ObjectShortName">JorRTarget[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/BorPCp4Target" type="array">
+      <obj_property name="ElementShortName">BorPCp4Target[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BorPCp4Target[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/ID_memToReg_ctrl" type="logic">
+      <obj_property name="ElementShortName">ID_memToReg_ctrl</obj_property>
+      <obj_property name="ObjectShortName">ID_memToReg_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/ID_memWrite_ctrl" type="logic">
+      <obj_property name="ElementShortName">ID_memWrite_ctrl</obj_property>
+      <obj_property name="ObjectShortName">ID_memWrite_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/ID_regWrite_ctrl" type="logic">
+      <obj_property name="ElementShortName">ID_regWrite_ctrl</obj_property>
+      <obj_property name="ObjectShortName">ID_regWrite_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/ID_LBU_ctrl" type="logic">
+      <obj_property name="ElementShortName">ID_LBU_ctrl</obj_property>
+      <obj_property name="ObjectShortName">ID_LBU_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/ID_ByteSize_ctrl" type="logic">
+      <obj_property name="ElementShortName">ID_ByteSize_ctrl</obj_property>
+      <obj_property name="ObjectShortName">ID_ByteSize_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/BranchSense_ctrl" type="logic">
+      <obj_property name="ElementShortName">BranchSense_ctrl</obj_property>
+      <obj_property name="ObjectShortName">BranchSense_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/ID_ALUOpSelect_ctrl" type="array">
+      <obj_property name="ElementShortName">ID_ALUOpSelect_ctrl[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_ALUOpSelect_ctrl[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/SZExtension_ctrl" type="logic">
+      <obj_property name="ElementShortName">SZExtension_ctrl</obj_property>
+      <obj_property name="ObjectShortName">SZExtension_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/Jump_ctrl" type="logic">
+      <obj_property name="ElementShortName">Jump_ctrl</obj_property>
+      <obj_property name="ObjectShortName">Jump_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/RegToPC_ctrl" type="logic">
+      <obj_property name="ElementShortName">RegToPC_ctrl</obj_property>
+      <obj_property name="ObjectShortName">RegToPC_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/Branch_ctrl" type="logic">
+      <obj_property name="ElementShortName">Branch_ctrl</obj_property>
+      <obj_property name="ObjectShortName">Branch_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/ID_Link_ctrl" type="logic">
+      <obj_property name="ElementShortName">ID_Link_ctrl</obj_property>
+      <obj_property name="ObjectShortName">ID_Link_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/ID_RegDest_ctrl" type="logic">
+      <obj_property name="ElementShortName">ID_RegDest_ctrl</obj_property>
+      <obj_property name="ObjectShortName">ID_RegDest_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/ID_SYSCALL_ctrl" type="logic">
+      <obj_property name="ElementShortName">ID_SYSCALL_ctrl</obj_property>
+      <obj_property name="ObjectShortName">ID_SYSCALL_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/ID_UseRT_ctrl" type="logic">
+      <obj_property name="ElementShortName">ID_UseRT_ctrl</obj_property>
+      <obj_property name="ObjectShortName">ID_UseRT_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/ID_OperandB" type="array">
+      <obj_property name="ElementShortName">ID_OperandB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_OperandB[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/NEX_memToReg_ctrl" type="logic">
+      <obj_property name="ElementShortName">NEX_memToReg_ctrl</obj_property>
+      <obj_property name="ObjectShortName">NEX_memToReg_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/NEX_memWrite_ctrl" type="logic">
+      <obj_property name="ElementShortName">NEX_memWrite_ctrl</obj_property>
+      <obj_property name="ObjectShortName">NEX_memWrite_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/NEX_regWrite_ctrl" type="logic">
+      <obj_property name="ElementShortName">NEX_regWrite_ctrl</obj_property>
+      <obj_property name="ObjectShortName">NEX_regWrite_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/NEX_LBU_ctrl" type="logic">
+      <obj_property name="ElementShortName">NEX_LBU_ctrl</obj_property>
+      <obj_property name="ObjectShortName">NEX_LBU_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/NEX_ByteSize_ctrl" type="logic">
+      <obj_property name="ElementShortName">NEX_ByteSize_ctrl</obj_property>
+      <obj_property name="ObjectShortName">NEX_ByteSize_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/NEX_ALUOpSelect_ctrl" type="array">
+      <obj_property name="ElementShortName">NEX_ALUOpSelect_ctrl[3:0]</obj_property>
+      <obj_property name="ObjectShortName">NEX_ALUOpSelect_ctrl[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/NEX_Link_ctrl" type="logic">
+      <obj_property name="ElementShortName">NEX_Link_ctrl</obj_property>
+      <obj_property name="ObjectShortName">NEX_Link_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/NEX_RegDest_ctrl" type="logic">
+      <obj_property name="ElementShortName">NEX_RegDest_ctrl</obj_property>
+      <obj_property name="ObjectShortName">NEX_RegDest_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/NEX_SYSCALL_ctrl" type="logic">
+      <obj_property name="ElementShortName">NEX_SYSCALL_ctrl</obj_property>
+      <obj_property name="ObjectShortName">NEX_SYSCALL_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/NEX_UseRT_ctrl" type="logic">
+      <obj_property name="ElementShortName">NEX_UseRT_ctrl</obj_property>
+      <obj_property name="ObjectShortName">NEX_UseRT_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/ID_RegWriteDest" type="array">
+      <obj_property name="ElementShortName">ID_RegWriteDest[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_RegWriteDest[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/NEX_RegWriteDest" type="array">
+      <obj_property name="ElementShortName">NEX_RegWriteDest[4:0]</obj_property>
+      <obj_property name="ObjectShortName">NEX_RegWriteDest[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/NEX_RS" type="array">
+      <obj_property name="ElementShortName">NEX_RS[4:0]</obj_property>
+      <obj_property name="ObjectShortName">NEX_RS[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/NEX_RT" type="array">
+      <obj_property name="ElementShortName">NEX_RT[4:0]</obj_property>
+      <obj_property name="ObjectShortName">NEX_RT[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/NEX_SHAMT" type="array">
+      <obj_property name="ElementShortName">NEX_SHAMT[4:0]</obj_property>
+      <obj_property name="ObjectShortName">NEX_SHAMT[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/EX_memToReg_ctrl" type="logic">
+      <obj_property name="ElementShortName">EX_memToReg_ctrl</obj_property>
+      <obj_property name="ObjectShortName">EX_memToReg_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/EX_memWrite_ctrl" type="logic">
+      <obj_property name="ElementShortName">EX_memWrite_ctrl</obj_property>
+      <obj_property name="ObjectShortName">EX_memWrite_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/EX_regWrite_ctrl" type="logic">
+      <obj_property name="ElementShortName">EX_regWrite_ctrl</obj_property>
+      <obj_property name="ObjectShortName">EX_regWrite_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/EX_LBU_ctrl" type="logic">
+      <obj_property name="ElementShortName">EX_LBU_ctrl</obj_property>
+      <obj_property name="ObjectShortName">EX_LBU_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/EX_ByteSize_ctrl" type="logic">
+      <obj_property name="ElementShortName">EX_ByteSize_ctrl</obj_property>
+      <obj_property name="ObjectShortName">EX_ByteSize_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/EX_ALUOpSelect_ctrl" type="array">
+      <obj_property name="ElementShortName">EX_ALUOpSelect_ctrl[3:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_ALUOpSelect_ctrl[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/EX_Link_ctrl" type="logic">
+      <obj_property name="ElementShortName">EX_Link_ctrl</obj_property>
+      <obj_property name="ObjectShortName">EX_Link_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/EX_SYSCALL_ctrl" type="logic">
+      <obj_property name="ElementShortName">EX_SYSCALL_ctrl</obj_property>
+      <obj_property name="ObjectShortName">EX_SYSCALL_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/EX_UseRT_ctrl" type="logic">
+      <obj_property name="ElementShortName">EX_UseRT_ctrl</obj_property>
+      <obj_property name="ObjectShortName">EX_UseRT_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/EX_RegWriteDest" type="array">
+      <obj_property name="ElementShortName">EX_RegWriteDest[4:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_RegWriteDest[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/EX_SHAMT" type="array">
+      <obj_property name="ElementShortName">EX_SHAMT[4:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_SHAMT[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/EX_A" type="array">
+      <obj_property name="ElementShortName">EX_A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_A[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/EX_B" type="array">
+      <obj_property name="ElementShortName">EX_B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_B[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/EX_RS" type="array">
+      <obj_property name="ElementShortName">EX_RS[4:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_RS[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/EX_RT" type="array">
+      <obj_property name="ElementShortName">EX_RT[4:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_RT[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/EX_PCp4" type="array">
+      <obj_property name="ElementShortName">EX_PCp4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_PCp4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/EX_RTVAL" type="array">
+      <obj_property name="ElementShortName">EX_RTVAL[31:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_RTVAL[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/ALUPortA" type="array">
+      <obj_property name="ElementShortName">ALUPortA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUPortA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/ALUPortB" type="array">
+      <obj_property name="ElementShortName">ALUPortB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUPortB[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/ALUOut" type="array">
+      <obj_property name="ElementShortName">ALUOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/CarryOut_not_used" type="logic">
+      <obj_property name="ElementShortName">CarryOut_not_used</obj_property>
+      <obj_property name="ObjectShortName">CarryOut_not_used</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/Overflow_not_used" type="logic">
+      <obj_property name="ElementShortName">Overflow_not_used</obj_property>
+      <obj_property name="ObjectShortName">Overflow_not_used</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/HILO" type="array">
+      <obj_property name="ElementShortName">HILO[63:0]</obj_property>
+      <obj_property name="ObjectShortName">HILO[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/NextHILO" type="array">
+      <obj_property name="ElementShortName">NextHILO[63:0]</obj_property>
+      <obj_property name="ObjectShortName">NextHILO[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/MEM_RTVAL" type="array">
+      <obj_property name="ElementShortName">MEM_RTVAL[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_RTVAL[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/MEM_StoreValue" type="array">
+      <obj_property name="ElementShortName">MEM_StoreValue[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_StoreValue[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/MEM_RT" type="array">
+      <obj_property name="ElementShortName">MEM_RT[4:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_RT[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/MEM_RegWriteDest" type="array">
+      <obj_property name="ElementShortName">MEM_RegWriteDest[4:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_RegWriteDest[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/MEM_memToReg_ctrl" type="logic">
+      <obj_property name="ElementShortName">MEM_memToReg_ctrl</obj_property>
+      <obj_property name="ObjectShortName">MEM_memToReg_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/MEM_memWrite_ctrl" type="logic">
+      <obj_property name="ElementShortName">MEM_memWrite_ctrl</obj_property>
+      <obj_property name="ObjectShortName">MEM_memWrite_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/MEM_regWrite_ctrl" type="logic">
+      <obj_property name="ElementShortName">MEM_regWrite_ctrl</obj_property>
+      <obj_property name="ObjectShortName">MEM_regWrite_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/MEM_LBU_ctrl" type="logic">
+      <obj_property name="ElementShortName">MEM_LBU_ctrl</obj_property>
+      <obj_property name="ObjectShortName">MEM_LBU_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/MEM_ByteSize_ctrl" type="logic">
+      <obj_property name="ElementShortName">MEM_ByteSize_ctrl</obj_property>
+      <obj_property name="ObjectShortName">MEM_ByteSize_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/MEM_Link_ctrl" type="logic">
+      <obj_property name="ElementShortName">MEM_Link_ctrl</obj_property>
+      <obj_property name="ObjectShortName">MEM_Link_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/MEM_SYSCALL_ctrl" type="logic">
+      <obj_property name="ElementShortName">MEM_SYSCALL_ctrl</obj_property>
+      <obj_property name="ObjectShortName">MEM_SYSCALL_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/MEM_PCp4" type="array">
+      <obj_property name="ElementShortName">MEM_PCp4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_PCp4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/MEM_ALUOut" type="array">
+      <obj_property name="ElementShortName">MEM_ALUOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_ALUOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/MemOut" type="array">
+      <obj_property name="ElementShortName">MemOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MemOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/WB_ALUOut" type="array">
+      <obj_property name="ElementShortName">WB_ALUOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WB_ALUOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/WB_PCp4" type="array">
+      <obj_property name="ElementShortName">WB_PCp4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WB_PCp4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/WB_MemOut" type="array">
+      <obj_property name="ElementShortName">WB_MemOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WB_MemOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/WB_memToReg_ctrl" type="logic">
+      <obj_property name="ElementShortName">WB_memToReg_ctrl</obj_property>
+      <obj_property name="ObjectShortName">WB_memToReg_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/WB_Link_ctrl" type="logic">
+      <obj_property name="ElementShortName">WB_Link_ctrl</obj_property>
+      <obj_property name="ObjectShortName">WB_Link_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/WB_regWrite_ctrl" type="logic">
+      <obj_property name="ElementShortName">WB_regWrite_ctrl</obj_property>
+      <obj_property name="ObjectShortName">WB_regWrite_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/WB_SYSCALL_ctrl" type="logic">
+      <obj_property name="ElementShortName">WB_SYSCALL_ctrl</obj_property>
+      <obj_property name="ObjectShortName">WB_SYSCALL_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/WB_RegWriteDest" type="array">
+      <obj_property name="ElementShortName">WB_RegWriteDest[4:0]</obj_property>
+      <obj_property name="ObjectShortName">WB_RegWriteDest[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/WriteBackData" type="array">
+      <obj_property name="ElementShortName">WriteBackData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteBackData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/BranchTaken" type="logic">
+      <obj_property name="ElementShortName">BranchTaken</obj_property>
+      <obj_property name="ObjectShortName">BranchTaken</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/IFlush" type="logic">
+      <obj_property name="ElementShortName">IFlush</obj_property>
+      <obj_property name="ObjectShortName">IFlush</obj_property>
+   </wvobject>
+</wave_config>
