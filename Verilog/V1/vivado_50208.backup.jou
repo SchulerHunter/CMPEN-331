@@ -1,0 +1,225 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Apr 20 14:32:18 2020
+# Process ID: 50208
+# Current directory: D:/Git/CMPEN-331/Vivado/V1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent58100 D:\Git\CMPEN-331\Vivado\V1\V1.xpr
+# Log file: D:/Git/CMPEN-331/Vivado/V1/vivado.log
+# Journal file: D:/Git/CMPEN-331/Vivado/V1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Git/CMPEN-331/Vivado/V1/V1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+run all
+run all
+set_property -name {xsim.simulate.runtime} -value {10000ns} -objects [get_filesets sim_1]
+relaunch_sim
+run all
+run all
+run all
+relaunch_sim
+run all
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+run all
+run all
+run all
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+run all
+create_wave_config; add_wave /; set_property needs_save false [current_wave_config]
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+create_wave_config; add_wave /; set_property needs_save false [current_wave_config]
+run all
+run all
+add_bp {D:/Git/CMPEN-331/Vivado/V1/V1.srcs/sources_1/new/Top.v} 200
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+current_wave_config {TestWrapper_behav.wcfg}
+add_wave {{/TestWrapper/atop/PC}} 
+current_wave_config {TestWrapper_behav.wcfg}
+add_wave {{/TestWrapper/atop/fStall}} {{/TestWrapper/atop/fStallInit}} 
+current_wave_config {TestWrapper_behav.wcfg}
+add_wave {{/TestWrapper/atop/IMEM_READY}} 
+current_wave_config {TestWrapper_behav.wcfg}
+add_wave {{/TestWrapper/atop/HazardDetected}} 
+current_wave_config {TestWrapper_behav.wcfg}
+add_wave {{/TestWrapper/atop/dStall}} 
+current_wave_config {TestWrapper_behav.wcfg}
+add_wave {{/TestWrapper/atop/memAccess}} 
+current_wave_config {TestWrapper_behav.wcfg}
+add_wave {{/TestWrapper/atop/mStall}} 
+current_wave_config {TestWrapper_behav.wcfg}
+add_wave {{/TestWrapper/atop/MemOut}} 
+current_wave_config {TestWrapper_behav.wcfg}
+add_wave {{/TestWrapper/atop/DMEM_READY}} 
+save_wave_config {D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg}
+remove_bps -file {D:/Git/CMPEN-331/Vivado/V1/V1.srcs/sources_1/new/Top.v} -line 200
+run all
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+add_bp {D:/Git/CMPEN-331/Vivado/V1/V1.srcs/sources_1/new/Top.v} 200
+run all
+run all
+relaunch_sim
+save_wave_config {D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+current_wave_config {TestWrapper_behav.wcfg}
+add_wave {{/TestWrapper/atop/MEM_StoreValue}} 
+remove_bps -file {D:/Git/CMPEN-331/Vivado/V1/V1.srcs/sources_1/new/Top.v} -line 200
+run all
+relaunch_sim
+save_wave_config {D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+add_bp {D:/Git/CMPEN-331/Vivado/V1/V1.srcs/sources_1/new/Top.v} 200
+run all
+run all
+relaunch_sim
+run all
+run all
+run all
+run all
+relaunch_sim
+run all
+run all
+run all
+add_bp {D:/Git/CMPEN-331/Vivado/V1/V1.srcs/sources_1/new/Top.v} 202
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+relaunch_sim
+remove_bps -file {D:/Git/CMPEN-331/Vivado/V1/V1.srcs/sources_1/new/Top.v} -line 200
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+current_wave_config {}
+add_wave {{/TestWrapper/atop/MEM_ALUOut}} 
+current_wave_config {TestWrapper_behav.wcfg}
+add_wave {{/TestWrapper/atop/PC}} 
+run all
+remove_bps -file {D:/Git/CMPEN-331/Vivado/V1/V1.srcs/sources_1/new/Top.v} -line 202
+add_bp {D:/Git/CMPEN-331/Vivado/V1/V1.srcs/sources_1/new/Top.v} 202
+remove_bps -file {D:/Git/CMPEN-331/Vivado/V1/V1.srcs/sources_1/new/Top.v} -line 202
+run all
+save_wave_config {D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg}
+add_bp {D:/Git/CMPEN-331/Vivado/V1/V1.srcs/sources_1/new/Top.v} 31
+run all
+relaunch_sim
+current_wave_config {TestWrapper_behav.wcfg}
+add_wave {{/TestWrapper/atop/IFlush}} 
+remove_bps -file {D:/Git/CMPEN-331/Vivado/V1/V1.srcs/sources_1/new/Top.v} -line 31
+run all
+save_wave_config {D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Git/CMPEN-331/Vivado/V1/TestWrapper_behav.wcfg
+source TestWrapper.tcl
+close_sim
