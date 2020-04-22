@@ -4,9 +4,6 @@ Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 289e34238c
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'memToReg_in' [D:/Git/CMPEN-331/Verilog/V1/V1.srcs/sources_1/new/Top.v:286]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'memWrite_in' [D:/Git/CMPEN-331/Verilog/V1/V1.srcs/sources_1/new/Top.v:287]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'regWrite_in' [D:/Git/CMPEN-331/Verilog/V1/V1.srcs/sources_1/new/Top.v:288]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'LBU_in' [D:/Git/CMPEN-331/Verilog/V1/V1.srcs/sources_1/new/Top.v:289]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ByteSize_in' [D:/Git/CMPEN-331/Verilog/V1/V1.srcs/sources_1/new/Top.v:290]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'ALUOp_in' [D:/Git/CMPEN-331/Verilog/V1/V1.srcs/sources_1/new/Top.v:291]
