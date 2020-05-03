@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TestWrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TestWrapper" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="27681fs"></ZoomEndTime>
+      <Cursor1Time time="3000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="309"></NameColumnWidth>
+      <ValueColumnWidth column_width="114"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/TestWrapper/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus95" type="vbus">
+      <obj_property name="label">PC_low</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/TestWrapper/atop/PC[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/PC[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/PC[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/PC[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/PC[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/PC[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/PC[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/PC[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/PC[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/PC[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/PC[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/PC[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/PC[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/PC[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/PC[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/PC[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus119" type="vbus">
+      <obj_property name="label">Stalls</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/TestWrapper/atop/FetchStall" type="logic">
+         <obj_property name="ElementShortName">FetchStall</obj_property>
+         <obj_property name="ObjectShortName">FetchStall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/FetchInitiatesStall" type="logic">
+         <obj_property name="ElementShortName">FetchInitiatesStall</obj_property>
+         <obj_property name="ObjectShortName">FetchInitiatesStall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/DecodeStall" type="logic">
+         <obj_property name="ElementShortName">DecodeStall</obj_property>
+         <obj_property name="ObjectShortName">DecodeStall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/DecodeInitiatesStall" type="logic">
+         <obj_property name="ElementShortName">DecodeInitiatesStall</obj_property>
+         <obj_property name="ObjectShortName">DecodeInitiatesStall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/ExecuteStall" type="logic">
+         <obj_property name="ElementShortName">ExecuteStall</obj_property>
+         <obj_property name="ObjectShortName">ExecuteStall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/ExecuteInitiatesStall" type="logic">
+         <obj_property name="ElementShortName">ExecuteInitiatesStall</obj_property>
+         <obj_property name="ObjectShortName">ExecuteInitiatesStall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/MemoryStall" type="logic">
+         <obj_property name="ElementShortName">MemoryStall</obj_property>
+         <obj_property name="ObjectShortName">MemoryStall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/MemoryInitiatesStall" type="logic">
+         <obj_property name="ElementShortName">MemoryInitiatesStall</obj_property>
+         <obj_property name="ObjectShortName">MemoryInitiatesStall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/WritebackInitiatesStall" type="logic">
+         <obj_property name="ElementShortName">WritebackInitiatesStall</obj_property>
+         <obj_property name="ObjectShortName">WritebackInitiatesStall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/WritebackStall" type="logic">
+         <obj_property name="ElementShortName">WritebackStall</obj_property>
+         <obj_property name="ObjectShortName">WritebackStall</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/IFlush" type="logic">
+      <obj_property name="ElementShortName">IFlush</obj_property>
+      <obj_property name="ObjectShortName">IFlush</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/IMEM_READY" type="logic">
+      <obj_property name="ElementShortName">IMEM_READY</obj_property>
+      <obj_property name="ObjectShortName">IMEM_READY</obj_property>
+   </wvobject>
+   <wvobject fp_name="group3028" type="group">
+      <obj_property name="label">ICache</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/TestWrapper/atop/ICacheFillRequest" type="logic">
+         <obj_property name="ElementShortName">ICacheFillRequest</obj_property>
+         <obj_property name="ObjectShortName">ICacheFillRequest</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/thisICACHE/Ready" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">Ready</obj_property>
+         <obj_property name="ObjectShortName">Ready</obj_property>
+         <obj_property name="label">ICacheReady</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/thisICACHE/IFill_Address" type="array">
+         <obj_property name="ElementShortName">IFill_Address[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IFill_Address[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="group424" type="group">
+         <obj_property name="label">Cache Content</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="vbus2309" type="vbus">
+            <obj_property name="label">valid[0:7]</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/valid[7]" type="array">
+               <obj_property name="ElementShortName">[7][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[7][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/valid[6]" type="array">
+               <obj_property name="ElementShortName">[6][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[6][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/valid[5]" type="array">
+               <obj_property name="ElementShortName">[5][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[5][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/valid[4]" type="array">
+               <obj_property name="ElementShortName">[4][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[4][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/valid[3]" type="array">
+               <obj_property name="ElementShortName">[3][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[3][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/valid[2]" type="array">
+               <obj_property name="ElementShortName">[2][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[2][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/valid[1]" type="array">
+               <obj_property name="ElementShortName">[1][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/valid[0]" type="array">
+               <obj_property name="ElementShortName">[0][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][0:0]</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="vbus2350" type="vbus">
+            <obj_property name="label">tag[0:7]</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/tag[7]" type="array">
+               <obj_property name="ElementShortName">[7][20:0]</obj_property>
+               <obj_property name="ObjectShortName">[7][20:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/tag[6]" type="array">
+               <obj_property name="ElementShortName">[6][20:0]</obj_property>
+               <obj_property name="ObjectShortName">[6][20:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/tag[5]" type="array">
+               <obj_property name="ElementShortName">[5][20:0]</obj_property>
+               <obj_property name="ObjectShortName">[5][20:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/tag[4]" type="array">
+               <obj_property name="ElementShortName">[4][20:0]</obj_property>
+               <obj_property name="ObjectShortName">[4][20:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/tag[3]" type="array">
+               <obj_property name="ElementShortName">[3][20:0]</obj_property>
+               <obj_property name="ObjectShortName">[3][20:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/tag[2]" type="array">
+               <obj_property name="ElementShortName">[2][20:0]</obj_property>
+               <obj_property name="ObjectShortName">[2][20:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/tag[1]" type="array">
+               <obj_property name="ElementShortName">[1][20:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][20:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/tag[0]" type="array">
+               <obj_property name="ElementShortName">[0][20:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][20:0]</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="vbus458" type="vbus">
+            <obj_property name="label">content[0:7]</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/cacheContent[7]" type="array">
+               <obj_property name="ElementShortName">[7][511:0]</obj_property>
+               <obj_property name="ObjectShortName">[7][511:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/cacheContent[6]" type="array">
+               <obj_property name="ElementShortName">[6][511:0]</obj_property>
+               <obj_property name="ObjectShortName">[6][511:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/cacheContent[5]" type="array">
+               <obj_property name="ElementShortName">[5][511:0]</obj_property>
+               <obj_property name="ObjectShortName">[5][511:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/cacheContent[4]" type="array">
+               <obj_property name="ElementShortName">[4][511:0]</obj_property>
+               <obj_property name="ObjectShortName">[4][511:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/cacheContent[3]" type="array">
+               <obj_property name="ElementShortName">[3][511:0]</obj_property>
+               <obj_property name="ObjectShortName">[3][511:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/cacheContent[2]" type="array">
+               <obj_property name="ElementShortName">[2][511:0]</obj_property>
+               <obj_property name="ObjectShortName">[2][511:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/cacheContent[1]" type="array">
+               <obj_property name="ElementShortName">[1][511:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][511:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisICACHE/cacheContent[0]" type="array">
+               <obj_property name="ElementShortName">[0][511:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][511:0]</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group3029" type="group">
+      <obj_property name="label">BTB</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/TestWrapper/atop/EX_unknown_ctrl" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">EX_unknown_ctrl</obj_property>
+         <obj_property name="ObjectShortName">EX_unknown_ctrl</obj_property>
+         <obj_property name="label"> BTBUpdate</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/thisBTB/btbHit" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">btbHit</obj_property>
+         <obj_property name="ObjectShortName">btbHit</obj_property>
+         <obj_property name="label">BTBHit</obj_property>
+      </wvobject>
+      <wvobject fp_name="group506" type="group">
+         <obj_property name="label">IO</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/TestWrapper/atop/thisBTB/accessPC" type="array">
+            <obj_property name="ElementShortName">accessPC[31:0]</obj_property>
+            <obj_property name="ObjectShortName">accessPC[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/thisBTB/updatePC" type="array">
+            <obj_property name="ElementShortName">updatePC[31:0]</obj_property>
+            <obj_property name="ObjectShortName">updatePC[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/thisBTB/updateTargetPC" type="array">
+            <obj_property name="ElementShortName">updateTargetPC[31:0]</obj_property>
+            <obj_property name="ObjectShortName">updateTargetPC[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/thisBTB/updateInstBits" type="array">
+            <obj_property name="ElementShortName">updateInstBits[31:0]</obj_property>
+            <obj_property name="ObjectShortName">updateInstBits[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/thisBTB/targetPC" type="array">
+            <obj_property name="ElementShortName">targetPC[31:0]</obj_property>
+            <obj_property name="ObjectShortName">targetPC[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/thisBTB/outInstBits" type="array">
+            <obj_property name="ElementShortName">outInstBits[31:0]</obj_property>
+            <obj_property name="ObjectShortName">outInstBits[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/BTB_is_jump" type="logic">
+            <obj_property name="ElementShortName">BTB_is_jump</obj_property>
+            <obj_property name="ObjectShortName">BTB_is_jump</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group468" type="group">
+         <obj_property name="label">Cache Content</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/TestWrapper/atop/thisBTB/index" type="array">
+            <obj_property name="ElementShortName">index[4:0]</obj_property>
+            <obj_property name="ObjectShortName">index[4:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/thisBTB/updateIndex" type="array">
+            <obj_property name="ElementShortName">updateIndex[4:0]</obj_property>
+            <obj_property name="ObjectShortName">updateIndex[4:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/thisBTB/iContent[28]" type="array">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">[28][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[28][31:0]</obj_property>
+            <obj_property name="label">Content[28]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/thisBTB/tag[28]" type="array">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">[28][26:0]</obj_property>
+            <obj_property name="ObjectShortName">[28][26:0]</obj_property>
+            <obj_property name="label">Tag[28]</obj_property>
+         </wvobject>
+         <wvobject fp_name="vbus2264" type="vbus">
+            <obj_property name="label">BTBValid[0:7]</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/valid[7]" type="array">
+               <obj_property name="ElementShortName">[7][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[7][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/valid[6]" type="array">
+               <obj_property name="ElementShortName">[6][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[6][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/valid[5]" type="array">
+               <obj_property name="ElementShortName">[5][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[5][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/valid[4]" type="array">
+               <obj_property name="ElementShortName">[4][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[4][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/valid[3]" type="array">
+               <obj_property name="ElementShortName">[3][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[3][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/valid[2]" type="array">
+               <obj_property name="ElementShortName">[2][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[2][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/valid[1]" type="array">
+               <obj_property name="ElementShortName">[1][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/valid[0]" type="array">
+               <obj_property name="ElementShortName">[0][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][0:0]</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="vbus2969" type="vbus">
+            <obj_property name="label">BTBTag[0:7]</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/tag[7]" type="array">
+               <obj_property name="ElementShortName">[7][26:0]</obj_property>
+               <obj_property name="ObjectShortName">[7][26:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/tag[6]" type="array">
+               <obj_property name="ElementShortName">[6][26:0]</obj_property>
+               <obj_property name="ObjectShortName">[6][26:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/tag[5]" type="array">
+               <obj_property name="ElementShortName">[5][26:0]</obj_property>
+               <obj_property name="ObjectShortName">[5][26:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/tag[4]" type="array">
+               <obj_property name="ElementShortName">[4][26:0]</obj_property>
+               <obj_property name="ObjectShortName">[4][26:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/tag[3]" type="array">
+               <obj_property name="ElementShortName">[3][26:0]</obj_property>
+               <obj_property name="ObjectShortName">[3][26:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/tag[2]" type="array">
+               <obj_property name="ElementShortName">[2][26:0]</obj_property>
+               <obj_property name="ObjectShortName">[2][26:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/tag[1]" type="array">
+               <obj_property name="ElementShortName">[1][26:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][26:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/tag[0]" type="array">
+               <obj_property name="ElementShortName">[0][26:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][26:0]</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="vbus3010" type="vbus">
+            <obj_property name="label">BTBContent[0:7]</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/iContent[7]" type="array">
+               <obj_property name="ElementShortName">[7][31:0]</obj_property>
+               <obj_property name="ObjectShortName">[7][31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/iContent[6]" type="array">
+               <obj_property name="ElementShortName">[6][31:0]</obj_property>
+               <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/iContent[5]" type="array">
+               <obj_property name="ElementShortName">[5][31:0]</obj_property>
+               <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/iContent[4]" type="array">
+               <obj_property name="ElementShortName">[4][31:0]</obj_property>
+               <obj_property name="ObjectShortName">[4][31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/iContent[3]" type="array">
+               <obj_property name="ElementShortName">[3][31:0]</obj_property>
+               <obj_property name="ObjectShortName">[3][31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/iContent[2]" type="array">
+               <obj_property name="ElementShortName">[2][31:0]</obj_property>
+               <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/iContent[1]" type="array">
+               <obj_property name="ElementShortName">[1][31:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisBTB/iContent[0]" type="array">
+               <obj_property name="ElementShortName">[0][31:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group3030" type="group">
+      <obj_property name="label">BHT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/TestWrapper/atop/thisBHT/DoUpdate" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">DoUpdate</obj_property>
+         <obj_property name="ObjectShortName">DoUpdate</obj_property>
+         <obj_property name="label">BHTUpdate</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/thisBHT/Prediction" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">Prediction</obj_property>
+         <obj_property name="ObjectShortName">Prediction</obj_property>
+         <obj_property name="label">BHTPrediction</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/thisBHT/initialPrediction" type="array">
+         <obj_property name="ElementShortName">initialPrediction[1:0]</obj_property>
+         <obj_property name="ObjectShortName">initialPrediction[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="vbus2223" type="vbus">
+         <obj_property name="label">BHTContent[0:7]</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/TestWrapper/atop/thisBHT/hTable[7]" type="array">
+            <obj_property name="ElementShortName">[7][1:0]</obj_property>
+            <obj_property name="ObjectShortName">[7][1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/thisBHT/hTable[6]" type="array">
+            <obj_property name="ElementShortName">[6][1:0]</obj_property>
+            <obj_property name="ObjectShortName">[6][1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/thisBHT/hTable[5]" type="array">
+            <obj_property name="ElementShortName">[5][1:0]</obj_property>
+            <obj_property name="ObjectShortName">[5][1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/thisBHT/hTable[4]" type="array">
+            <obj_property name="ElementShortName">[4][1:0]</obj_property>
+            <obj_property name="ObjectShortName">[4][1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/thisBHT/hTable[3]" type="array">
+            <obj_property name="ElementShortName">[3][1:0]</obj_property>
+            <obj_property name="ObjectShortName">[3][1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/thisBHT/hTable[2]" type="array">
+            <obj_property name="ElementShortName">[2][1:0]</obj_property>
+            <obj_property name="ObjectShortName">[2][1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/thisBHT/hTable[1]" type="array">
+            <obj_property name="ElementShortName">[1][1:0]</obj_property>
+            <obj_property name="ObjectShortName">[1][1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/thisBHT/hTable[0]" type="array">
+            <obj_property name="ElementShortName">[0][1:0]</obj_property>
+            <obj_property name="ObjectShortName">[0][1:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus190" type="vbus">
+      <obj_property name="label">Mem_low</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/TestWrapper/atop/MEM_ALUOut[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/MEM_ALUOut[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/MEM_ALUOut[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/MEM_ALUOut[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/MEM_ALUOut[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/MEM_ALUOut[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/MEM_ALUOut[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/MEM_ALUOut[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/MEM_ALUOut[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/MEM_ALUOut[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/MEM_ALUOut[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/MEM_ALUOut[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/MEM_ALUOut[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/MEM_ALUOut[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/MEM_ALUOut[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/MEM_ALUOut[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/MemAccessAttempt" type="logic">
+      <obj_property name="ElementShortName">MemAccessAttempt</obj_property>
+      <obj_property name="ObjectShortName">MemAccessAttempt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestWrapper/atop/DMEM_READY" type="logic">
+      <obj_property name="ElementShortName">DMEM_READY</obj_property>
+      <obj_property name="ObjectShortName">DMEM_READY</obj_property>
+   </wvobject>
+   <wvobject fp_name="group120" type="group">
+      <obj_property name="label">DCache</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/TestWrapper/atop/thisDCACHE/Ready" type="logic">
+         <obj_property name="ElementShortName">Ready</obj_property>
+         <obj_property name="ObjectShortName">Ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/thisDCACHE/DFill" type="logic">
+         <obj_property name="ElementShortName">DFill</obj_property>
+         <obj_property name="ObjectShortName">DFill</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/thisDCACHE/RValue" type="array">
+         <obj_property name="ElementShortName">RValue[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RValue[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="group423" type="group">
+         <obj_property name="label">Cache Content</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="vbus414" type="vbus">
+            <obj_property name="label">MRU[0:7]</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/MRU[7]" type="array">
+               <obj_property name="ElementShortName">[7][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[7][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/MRU[6]" type="array">
+               <obj_property name="ElementShortName">[6][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[6][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/MRU[5]" type="array">
+               <obj_property name="ElementShortName">[5][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[5][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/MRU[4]" type="array">
+               <obj_property name="ElementShortName">[4][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[4][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/MRU[3]" type="array">
+               <obj_property name="ElementShortName">[3][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[3][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/MRU[2]" type="array">
+               <obj_property name="ElementShortName">[2][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[2][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/MRU[1]" type="array">
+               <obj_property name="ElementShortName">[1][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/MRU[0]" type="array">
+               <obj_property name="ElementShortName">[0][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][0:0]</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="vbus155" type="vbus">
+            <obj_property name="label">valid0[0:7]</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/valid0[7]" type="array">
+               <obj_property name="ElementShortName">[7][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[7][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/valid0[6]" type="array">
+               <obj_property name="ElementShortName">[6][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[6][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/valid0[5]" type="array">
+               <obj_property name="ElementShortName">[5][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[5][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/valid0[4]" type="array">
+               <obj_property name="ElementShortName">[4][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[4][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/valid0[3]" type="array">
+               <obj_property name="ElementShortName">[3][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[3][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/valid0[2]" type="array">
+               <obj_property name="ElementShortName">[2][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[2][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/valid0[1]" type="array">
+               <obj_property name="ElementShortName">[1][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/valid0[0]" type="array">
+               <obj_property name="ElementShortName">[0][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][0:0]</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="vbus242" type="vbus">
+            <obj_property name="label">dirty0[0:7]</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/dirty0[7]" type="array">
+               <obj_property name="ElementShortName">[7][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[7][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/dirty0[6]" type="array">
+               <obj_property name="ElementShortName">[6][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[6][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/dirty0[5]" type="array">
+               <obj_property name="ElementShortName">[5][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[5][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/dirty0[4]" type="array">
+               <obj_property name="ElementShortName">[4][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[4][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/dirty0[3]" type="array">
+               <obj_property name="ElementShortName">[3][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[3][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/dirty0[2]" type="array">
+               <obj_property name="ElementShortName">[2][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[2][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/dirty0[1]" type="array">
+               <obj_property name="ElementShortName">[1][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/dirty0[0]" type="array">
+               <obj_property name="ElementShortName">[0][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][0:0]</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="vbus200" type="vbus">
+            <obj_property name="label">content0[0:7]</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/content0[7]" type="array">
+               <obj_property name="ElementShortName">[7][255:0]</obj_property>
+               <obj_property name="ObjectShortName">[7][255:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/content0[6]" type="array">
+               <obj_property name="ElementShortName">[6][255:0]</obj_property>
+               <obj_property name="ObjectShortName">[6][255:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/content0[5]" type="array">
+               <obj_property name="ElementShortName">[5][255:0]</obj_property>
+               <obj_property name="ObjectShortName">[5][255:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/content0[4]" type="array">
+               <obj_property name="ElementShortName">[4][255:0]</obj_property>
+               <obj_property name="ObjectShortName">[4][255:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/content0[3]" type="array">
+               <obj_property name="ElementShortName">[3][255:0]</obj_property>
+               <obj_property name="ObjectShortName">[3][255:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/content0[2]" type="array">
+               <obj_property name="ElementShortName">[2][255:0]</obj_property>
+               <obj_property name="ObjectShortName">[2][255:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/content0[1]" type="array">
+               <obj_property name="ElementShortName">[1][255:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][255:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/content0[0]" type="array">
+               <obj_property name="ElementShortName">[0][255:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][255:0]</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="vbus290" type="vbus">
+            <obj_property name="label">valid1[0:7]</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/valid1[7]" type="array">
+               <obj_property name="ElementShortName">[7][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[7][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/valid1[6]" type="array">
+               <obj_property name="ElementShortName">[6][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[6][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/valid1[5]" type="array">
+               <obj_property name="ElementShortName">[5][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[5][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/valid1[4]" type="array">
+               <obj_property name="ElementShortName">[4][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[4][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/valid1[3]" type="array">
+               <obj_property name="ElementShortName">[3][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[3][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/valid1[2]" type="array">
+               <obj_property name="ElementShortName">[2][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[2][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/valid1[1]" type="array">
+               <obj_property name="ElementShortName">[1][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/valid1[0]" type="array">
+               <obj_property name="ElementShortName">[0][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][0:0]</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="vbus331" type="vbus">
+            <obj_property name="label">dirty1[0:7]</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/dirty1[7]" type="array">
+               <obj_property name="ElementShortName">[7][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[7][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/dirty1[6]" type="array">
+               <obj_property name="ElementShortName">[6][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[6][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/dirty1[5]" type="array">
+               <obj_property name="ElementShortName">[5][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[5][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/dirty1[4]" type="array">
+               <obj_property name="ElementShortName">[4][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[4][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/dirty1[3]" type="array">
+               <obj_property name="ElementShortName">[3][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[3][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/dirty1[2]" type="array">
+               <obj_property name="ElementShortName">[2][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[2][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/dirty1[1]" type="array">
+               <obj_property name="ElementShortName">[1][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][0:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/dirty1[0]" type="array">
+               <obj_property name="ElementShortName">[0][0:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][0:0]</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="vbus372" type="vbus">
+            <obj_property name="label">content1[0:7]</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/content1[7]" type="array">
+               <obj_property name="ElementShortName">[7][255:0]</obj_property>
+               <obj_property name="ObjectShortName">[7][255:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/content1[6]" type="array">
+               <obj_property name="ElementShortName">[6][255:0]</obj_property>
+               <obj_property name="ObjectShortName">[6][255:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/content1[5]" type="array">
+               <obj_property name="ElementShortName">[5][255:0]</obj_property>
+               <obj_property name="ObjectShortName">[5][255:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/content1[4]" type="array">
+               <obj_property name="ElementShortName">[4][255:0]</obj_property>
+               <obj_property name="ObjectShortName">[4][255:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/content1[3]" type="array">
+               <obj_property name="ElementShortName">[3][255:0]</obj_property>
+               <obj_property name="ObjectShortName">[3][255:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/content1[2]" type="array">
+               <obj_property name="ElementShortName">[2][255:0]</obj_property>
+               <obj_property name="ObjectShortName">[2][255:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/content1[1]" type="array">
+               <obj_property name="ElementShortName">[1][255:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][255:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/thisDCACHE/content1[0]" type="array">
+               <obj_property name="ElementShortName">[0][255:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][255:0]</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group507" type="group">
+      <obj_property name="label">HILO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/TestWrapper/atop/FWD_LO" type="array">
+         <obj_property name="ElementShortName">FWD_LO[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FWD_LO[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="group212" type="group">
+         <obj_property name="label">Content</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/TestWrapper/atop/HILO" type="array">
+            <obj_property name="ElementShortName">HILO[63:0]</obj_property>
+            <obj_property name="ObjectShortName">HILO[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/NextHILO" type="array">
+            <obj_property name="ElementShortName">NextHILO[63:0]</obj_property>
+            <obj_property name="ObjectShortName">NextHILO[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/FWD_HILO" type="array">
+            <obj_property name="ElementShortName">FWD_HILO[63:0]</obj_property>
+            <obj_property name="ObjectShortName">FWD_HILO[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/MEM_HILO" type="array">
+            <obj_property name="ElementShortName">MEM_HILO[63:0]</obj_property>
+            <obj_property name="ObjectShortName">MEM_HILO[63:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/WB_HILO" type="array">
+            <obj_property name="ElementShortName">WB_HILO[63:0]</obj_property>
+            <obj_property name="ObjectShortName">WB_HILO[63:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group328" type="group">
+         <obj_property name="label">ALU_Out</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/TestWrapper/atop/ALUOut" type="array">
+            <obj_property name="ElementShortName">ALUOut[31:0]</obj_property>
+            <obj_property name="ObjectShortName">ALUOut[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/MEM_ALUOut" type="array">
+            <obj_property name="ElementShortName">MEM_ALUOut[31:0]</obj_property>
+            <obj_property name="ObjectShortName">MEM_ALUOut[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/WB_ALUOut" type="array">
+            <obj_property name="ElementShortName">WB_ALUOut[31:0]</obj_property>
+            <obj_property name="ObjectShortName">WB_ALUOut[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="vbus224" type="vbus">
+         <obj_property name="label">Use Control</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/TestWrapper/atop/ID_UseHILO_ctrl" type="logic">
+            <obj_property name="ElementShortName">ID_UseHILO_ctrl</obj_property>
+            <obj_property name="ObjectShortName">ID_UseHILO_ctrl</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/EX_UseHILO_ctrl" type="logic">
+            <obj_property name="ElementShortName">EX_UseHILO_ctrl</obj_property>
+            <obj_property name="ObjectShortName">EX_UseHILO_ctrl</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/MEM_UseHILO_ctrl" type="logic">
+            <obj_property name="ElementShortName">MEM_UseHILO_ctrl</obj_property>
+            <obj_property name="ObjectShortName">MEM_UseHILO_ctrl</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="vbus225" type="vbus">
+         <obj_property name="label">Write Control</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/TestWrapper/atop/ID_WriteHILO_ctrl" type="logic">
+            <obj_property name="ElementShortName">ID_WriteHILO_ctrl</obj_property>
+            <obj_property name="ObjectShortName">ID_WriteHILO_ctrl</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/EX_WriteHILO_ctrl" type="logic">
+            <obj_property name="ElementShortName">EX_WriteHILO_ctrl</obj_property>
+            <obj_property name="ObjectShortName">EX_WriteHILO_ctrl</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/MEM_WriteHILO_ctrl" type="logic">
+            <obj_property name="ElementShortName">MEM_WriteHILO_ctrl</obj_property>
+            <obj_property name="ObjectShortName">MEM_WriteHILO_ctrl</obj_property>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/WB_WriteHILO_ctrl" type="logic">
+            <obj_property name="ElementShortName">WB_WriteHILO_ctrl</obj_property>
+            <obj_property name="ObjectShortName">WB_WriteHILO_ctrl</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group513" type="group">
+      <obj_property name="label">Data Dump</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/TestWrapper/atop/ICount" type="array">
+         <obj_property name="ElementShortName">ICount[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ICount[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="vbus343" type="vbus">
+         <obj_property name="label">Pending Signals</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/TestWrapper/atop/noPendingRegWrites" type="logic">
+            <obj_property name="ElementShortName">noPendingRegWrites</obj_property>
+            <obj_property name="ObjectShortName">noPendingRegWrites</obj_property>
+         </wvobject>
+         <wvobject fp_name="vbus342" type="vbus">
+            <obj_property name="label">RegWrite</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/TestWrapper/atop/ID_regWrite_ctrl" type="logic">
+               <obj_property name="ElementShortName">ID_regWrite_ctrl</obj_property>
+               <obj_property name="ObjectShortName">ID_regWrite_ctrl</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/EX_regWrite_ctrl" type="logic">
+               <obj_property name="ElementShortName">EX_regWrite_ctrl</obj_property>
+               <obj_property name="ObjectShortName">EX_regWrite_ctrl</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/MEM_regWrite_ctrl" type="logic">
+               <obj_property name="ElementShortName">MEM_regWrite_ctrl</obj_property>
+               <obj_property name="ObjectShortName">MEM_regWrite_ctrl</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/WB_regWrite_ctrl" type="logic">
+               <obj_property name="ElementShortName">WB_regWrite_ctrl</obj_property>
+               <obj_property name="ObjectShortName">WB_regWrite_ctrl</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/noPendingHILOWrites" type="logic">
+            <obj_property name="ElementShortName">noPendingHILOWrites</obj_property>
+            <obj_property name="ObjectShortName">noPendingHILOWrites</obj_property>
+         </wvobject>
+         <wvobject fp_name="vbus344" type="vbus">
+            <obj_property name="label">HILOWrite</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/TestWrapper/atop/ID_WriteHILO_ctrl" type="logic">
+               <obj_property name="ElementShortName">ID_WriteHILO_ctrl</obj_property>
+               <obj_property name="ObjectShortName">ID_WriteHILO_ctrl</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/EX_WriteHILO_ctrl" type="logic">
+               <obj_property name="ElementShortName">EX_WriteHILO_ctrl</obj_property>
+               <obj_property name="ObjectShortName">EX_WriteHILO_ctrl</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/MEM_WriteHILO_ctrl" type="logic">
+               <obj_property name="ElementShortName">MEM_WriteHILO_ctrl</obj_property>
+               <obj_property name="ObjectShortName">MEM_WriteHILO_ctrl</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/WB_WriteHILO_ctrl" type="logic">
+               <obj_property name="ElementShortName">WB_WriteHILO_ctrl</obj_property>
+               <obj_property name="ObjectShortName">WB_WriteHILO_ctrl</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/noPendingMemWrites" type="logic">
+            <obj_property name="ElementShortName">noPendingMemWrites</obj_property>
+            <obj_property name="ObjectShortName">noPendingMemWrites</obj_property>
+         </wvobject>
+         <wvobject fp_name="vbus349" type="vbus">
+            <obj_property name="label">memWrite</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/TestWrapper/atop/ID_memWrite_ctrl" type="logic">
+               <obj_property name="ElementShortName">ID_memWrite_ctrl</obj_property>
+               <obj_property name="ObjectShortName">ID_memWrite_ctrl</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/EX_memWrite_ctrl" type="logic">
+               <obj_property name="ElementShortName">EX_memWrite_ctrl</obj_property>
+               <obj_property name="ObjectShortName">EX_memWrite_ctrl</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/MEM_memWrite_ctrl" type="logic">
+               <obj_property name="ElementShortName">MEM_memWrite_ctrl</obj_property>
+               <obj_property name="ObjectShortName">MEM_memWrite_ctrl</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="/TestWrapper/atop/noPendingSyscalls" type="logic">
+            <obj_property name="ElementShortName">noPendingSyscalls</obj_property>
+            <obj_property name="ObjectShortName">noPendingSyscalls</obj_property>
+         </wvobject>
+         <wvobject fp_name="vbus353" type="vbus">
+            <obj_property name="label">Syscalls</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/TestWrapper/atop/ID_SYSCALL_ctrl" type="logic">
+               <obj_property name="ElementShortName">ID_SYSCALL_ctrl</obj_property>
+               <obj_property name="ObjectShortName">ID_SYSCALL_ctrl</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/EX_SYSCALL_ctrl" type="logic">
+               <obj_property name="ElementShortName">EX_SYSCALL_ctrl</obj_property>
+               <obj_property name="ObjectShortName">EX_SYSCALL_ctrl</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/MEM_SYSCALL_ctrl" type="logic">
+               <obj_property name="ElementShortName">MEM_SYSCALL_ctrl</obj_property>
+               <obj_property name="ObjectShortName">MEM_SYSCALL_ctrl</obj_property>
+            </wvobject>
+            <wvobject fp_name="/TestWrapper/atop/WB_SYSCALL_ctrl" type="logic">
+               <obj_property name="ElementShortName">WB_SYSCALL_ctrl</obj_property>
+               <obj_property name="ObjectShortName">WB_SYSCALL_ctrl</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/pipeFlush" type="logic">
+         <obj_property name="ElementShortName">pipeFlush</obj_property>
+         <obj_property name="ObjectShortName">pipeFlush</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/dumpTrigger" type="logic">
+         <obj_property name="ElementShortName">dumpTrigger</obj_property>
+         <obj_property name="ObjectShortName">dumpTrigger</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestWrapper/atop/succesfulFetch" type="logic">
+         <obj_property name="ElementShortName">succesfulFetch</obj_property>
+         <obj_property name="ObjectShortName">succesfulFetch</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,53 @@
+Initialized memory and register contents from directory ex2
+Running P(SU) P(ython) S(imulator for a) S(ubset of) M(IPS)
+0xfffffffc
+0x00000bad
+0x00000001
+0x00000000
+0x00000000
+0x00000001
+0x0000eec5
+0x0000aa80
+0xfeedeec5
+0x0000ffff
+0x00005555
+0x00010000
+0xffffffde
+0xffffffad
+0xffffffed
+0xdeadbeef
+0xfeedeec5
+0x000000de
+0x000000ad
+0x000000ed
+0xaa0000ff
+0xaa00aaff
+0xbadc0de5
+0xc0de5bad
+0x00feedee
+0xfffeedee
+0xb9c9fcaa
+0x4411e0e0
+0x4411e0e0
+0xbacc0cc5
+0xfefdefe5
+0x4431e320
+0x0102101a
+0x00000000
+0x00000001
+Emulating EXIT syscall, terminating simulation
+
+Total Cycles: 520
+IMEM stall cycles: 157
+DMEM stall cycles: 2
+
+Insts.Fetched: 361
+Insts.Squashed: 0
+Insts.Completed: 361
+Operation Mix:
+	Insts.Loads: 12
+	Insts.Stores: 4
+	Insts.ALU Ops: 142
+	Insts.Boolean Ops: 61
+	Insts.Control Ops: 71
+	Insts.SYSCALLs: 71

@@ -1,0 +1,11 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3a17eed8800c4043a4024ae27aab8448 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TestWrapper_behav xil_defaultlib.TestWrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 1 for port 'ID_HILO' [D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/Top.v:395]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 1 for port 'EX_HILO' [D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/Top.v:442]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 1 for port 'MEM_HILO' [D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/Top.v:479]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

@@ -1,0 +1,53 @@
+def decSLL(instruction):
+    simStats.stats.ALUOps = simStats.stats.ALUOps + 1 # count as ALU op
+    HWComponents.CONTROL.byteSize = False # byteOperation on memory
+    HWComponents.CONTROL.writeHILO = False # writes to HI and LO registers
+    HWComponents.CONTROL.lbu = False # memory return value is unsigned byte
+    # specifies control code for ALU={0:ADD,1:SUB,2:AND,3:OR,4:NOR,5:XOR,6:SLT,7:SLTU,8:SLL,9:SRL,10:SRA,11:LUI,12:MUL,13:DIV,14:MULU,15:DIVU
+    HWComponents.CONTROL.ALUop = 8 # SLL
+    HWComponents.CONTROL.isBranch = False # is any type of branch
+    HWComponents.CONTROL.isJump = False # J, JAL = True -- gets PC from instruction
+    HWComponents.CONTROL.isRegToPC = False # JR, JALR = True -- gets PC from reg
+    HWComponents.CONTROL.isLink = False # JAL, JALR = True -- writes return address to $31 aka $ra
+    HWComponents.CONTROL.branchSense = True # beq = True; bne = False
+    HWComponents.CONTROL.memToReg = False # Does this instruction get its result from memory
+    HWComponents.REGWritePort.writeEnable = True # Does this instruction write to a register?
+    HWComponents.REGWritePort.address = HWComponents.CONTROL.RD # RD, RT, RA
+    HWComponents.ALUPortB = HWComponents.REG[HWComponents.CONTROL.RT]
+    HWComponents.MemWritePort.writeEnable = False
+    
+def decSRL(instruction):
+    simStats.stats.ALUOps = simStats.stats.ALUOps + 1 # count as ALU op
+    HWComponents.CONTROL.byteSize = False # byteOperation on memory
+    HWComponents.CONTROL.writeHILO = False # writes to HI and LO registers
+    HWComponents.CONTROL.lbu = False # memory return value is unsigned byte
+    # specifies control code for ALU={0:ADD,1:SUB,2:AND,3:OR,4:NOR,5:XOR,6:SLT,7:SLTU,8:SLL,9:SRL,10:SRA,11:LUI,12:MUL,13:DIV,14:MULU,15:DIVU
+    HWComponents.CONTROL.ALUop = 9 # SRL
+    HWComponents.CONTROL.isBranch = False # is any type of branch
+    HWComponents.CONTROL.isJump = False # J, JAL = True -- gets PC from instruction
+    HWComponents.CONTROL.isRegToPC = False # JR, JALR = True -- gets PC from reg
+    HWComponents.CONTROL.isLink = False # JAL, JALR = True -- writes return address to $31 aka $ra
+    HWComponents.CONTROL.branchSense = True # beq = True; bne = False
+    HWComponents.CONTROL.memToReg = False # Does this instruction get its result from memory
+    HWComponents.REGWritePort.writeEnable = True # Does this instruction write to a register?
+    HWComponents.REGWritePort.address = HWComponents.CONTROL.RD # RD, RT, RA
+    HWComponents.ALUPortB = HWComponents.REG[HWComponents.CONTROL.RT]
+    HWComponents.MemWritePort.writeEnable = False
+    
+def decSRA(instruction):
+    simStats.stats.ALUOps = simStats.stats.ALUOps + 1 # count as ALU op
+    HWComponents.CONTROL.byteSize = False # byteOperation on memory
+    HWComponents.CONTROL.writeHILO = False # writes to HI and LO registers
+    HWComponents.CONTROL.lbu = False # memory return value is unsigned byte
+    # specifies control code for ALU={0:ADD,1:SUB,2:AND,3:OR,4:NOR,5:XOR,6:SLT,7:SLTU,8:SLL,9:SRL,10:SRA,11:LUI,12:MUL,13:DIV,14:MULU,15:DIVU
+    HWComponents.CONTROL.ALUop = 10 # SRA
+    HWComponents.CONTROL.isBranch = False # is any type of branch
+    HWComponents.CONTROL.isJump = False # J, JAL = True -- gets PC from instruction
+    HWComponents.CONTROL.isRegToPC = False # JR, JALR = True -- gets PC from reg
+    HWComponents.CONTROL.isLink = False # JAL, JALR = True -- writes return address to $31 aka $ra
+    HWComponents.CONTROL.branchSense = True # beq = True; bne = False
+    HWComponents.CONTROL.memToReg = False # Does this instruction get its result from memory
+    HWComponents.REGWritePort.writeEnable = True # Does this instruction write to a register?
+    HWComponents.REGWritePort.address = HWComponents.CONTROL.RD # RD, RT, RA
+    HWComponents.ALUPortB = HWComponents.REG[HWComponents.CONTROL.RT]
+    HWComponents.MemWritePort.writeEnable = False

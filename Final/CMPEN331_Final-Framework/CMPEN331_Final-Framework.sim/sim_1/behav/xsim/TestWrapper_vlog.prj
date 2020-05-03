@@ -1,0 +1,33 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/ALU.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/BHT.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/BTB.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/CONTROL.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/DMEM.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/DecodeForwarding.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/EQComp.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/EXForwarding.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/EX_MEM_PR.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/HazardDetection.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/ID_EX_PR.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/IF_ID_PR.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/IMEM.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/IncFour.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/MEM_WB_PR.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/MEMforwarding.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/MainMemory.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/REGFILE.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/SYSCALL_EMU.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/SZExtender.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/ScaledAdder.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/Top.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/reg32.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/reg64.v" \
+"../../../../CMPEN331_Final-Framework.srcs/sources_1/new/TestWrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

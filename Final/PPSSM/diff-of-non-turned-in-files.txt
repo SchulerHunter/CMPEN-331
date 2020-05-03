@@ -1,0 +1,89 @@
+===EmulatedSYSCALLs.py===
+35,48c35
+<         print("{:d}".format(ival),end='')
+<     elif 4 == callCode: # print string service
+<         strAddr = HWComponents.REG[4] # get $a0
+<         success = False
+<         curChar = '1'
+<         while not curChar == 0:
+<             while False == success:
+<                 MRval = HWComponents.DMEM.loadByteUnsigned(strAddr)
+<                 curChar = MRval.value
+<                 success = MRval.success
+<             if not curChar ==0:
+<                 print("{:c}".format(curChar),end='')
+<             success = False
+<             strAddr = strAddr + 1
+---
+>         print("{:d}\n".format(ival))
+54,57d40
+<     elif 34 == callCode: # print hex service
+<         ival = HWComponents.REG[4] # get $a0
+<         print("{:#010x}".format(ival),end='')
+< 
+
+===HWComponents.py===
+126c126
+<                 print("Wrote {:#04x} to MEM[{:#010x}]".format(MemWritePort.value, MemWritePort.address))
+---
+>                 print("Wrote {:#04x} to MEM[{:#010x}]".format(MEMWritePort.value, MEMritePort.address))
+130c130
+<                 print("Wrote {:#010x} to MEM[{:#010x}--{:#010x}]".format(MemWritePort.value, MemWritePort.address & 0xFFFFFFFC, (MemWritePort.address & 0xFFFFFFFC)+4))
+---
+>                 print("Wrote {:#010x} to MEM[{:#010x}]".format(MEMWritePort.value, MEMritePort.address))
+
+===MIPSCONTROL.py===
+41,43d40
+<         HWComponents.MemWritePort.value = HWComponents.REG[self.RT] # always pass through
+<         if self.printVerboseOutput:
+<             print("Presumptive RS read: {:#010x} from register {:#010x}".format(HWComponents.ALUPortA,self.RS))
+
+===MIPSDATAPATH.py===
+19c19
+<         outSUB = (inA - inB) & 0xFFFFFFFF
+---
+>         outSUB = inA - inB
+22c22
+<         outNOR = (~(inA | inB)) & 0xFFFFFFFF
+---
+>         outNOR = ~(inA | inB)
+26,31c26,28
+<         outSLL = (inB << HWComponents.CONTROL.SHAMT ) & 0xFFFFFFFF
+<         outSRL = (inB >> HWComponents.CONTROL.SHAMT ) & 0xFFFFFFFF
+<         outSRAupper = (0xFFFFFFFF << (32 - HWComponents.CONTROL.SHAMT)) & 0xFFFFFFFF
+<         if 0 == inB & 0x80000000:
+<             outSRAupper = 0
+<         outSRA =  ( outSRAupper | (inB >> HWComponents.CONTROL.SHAMT)) & 0xFFFFFFFF
+---
+>         outSLL = 0 if not HWComponents.CONTROL.ALUop == 8 else (inA << inB) & 0xFFFFFFFF
+>         outSRL = 0 if not HWComponents.CONTROL.ALUop == 9 else (inA >> inB) & 0xFFFFFFFF
+>         outSRA = 0 if not HWComponents.CONTROL.ALUop == 10 else (inA >> inB) & 0xFFFFFFFF if not (inA & 0x80000000) else ((0xFFFFFFFF << (32 - inB)) | (inA >> inB)) & 0xFFFFFFFF
+86,87c83
+<             print("ALU (op={:d}) computed {:#010x} from {:#010x} op {:#010x}".format(HWComponents.CONTROL.ALUop, self.outALU, inA, inB))
+<         HWComponents.MemWritePort.address=self.outALU
+---
+>             print("ALU (op={:d}) computed {:#010x}".format(HWComponents.CONTROL.ALUop, self.outALU))
+
+===MIPSMEM.py===
+86c86
+<         self.localMem.setByte(address,B)
+---
+>         self.localMem.setByte(address,B0)
+100c100
+<         self.mask = (~(blockSize - 1)) & 0xFFFFFFFF
+---
+>         self.mask = ~(blockSize - 1)
+110c110
+<             for i in range(address & self.mask, (address & self.mask)+self.blockSize):
+---
+>             for i in range(address, address+self.blockSize):
+118c118
+<             for i in range(address & self.mask, (address & self.mask)+self.blockSize):
+---
+>             for i in range(address, address+self.blockSize):
+
+===PPSSM.py===
+
+===simStats.py===
+
+===stateFileManagement.py===
