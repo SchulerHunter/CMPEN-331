@@ -137,7 +137,8 @@ wire EX_SYSCALL_ctrl;          // Do Emulated Syscall
 wire EX_UseRT_ctrl;           // Use RT else IMM
 wire EX_WriteHILO_ctrl;
 wire EX_UseHILO_ctrl;
-wire [63:0] EX_HILO;
+wire [61:0] EX_HILO;
+wire [31:0] EX_HI;
 
 wire [4:0] EX_RegWriteDest; // RD, RT, 31
 
@@ -175,8 +176,7 @@ wire MEM_SYSCALL_ctrl;          // Do Emulated Syscall
 wire [31:0] MEM_PCp4;
 wire [31:0] MEM_ALUOut;
 wire MEM_WriteHILO_ctrl;
-wire MEM_UseHILO_ctrl;
-wire [63:0] MEM_HILO;
+wire [31:0] MEM_HI;
 
 // Memory Related Signals
 wire [31:0] MemOut;     // memory read value, if memToReg, else 0
@@ -191,9 +191,9 @@ wire WB_SYSCALL_ctrl;          // Do Emulated Syscall
 wire [4:0] WB_RegWriteDest; // RD, RT, 31
 wire [31:0] WriteBackData;  // Data to be written to register file
 wire WB_WriteHILO_ctrl;
-wire [63:0] WB_HILO;
+wire [31:0] WB_HI;
 
-assign NextHILO = (WB_WriteHILO_ctrl)?WriteBackData:HILO;
+assign NextHILO = {WB_HI,WB_ALUOut};
 
 wire [31:0] ID_PC;
 wire [31:0] EX_PC;
@@ -275,9 +275,19 @@ ICACHE thisICACHE(.Address(PC),.InstBits(IBits),.Ready(IMEM_READY),.clk(clk),
                         // Generates PC + 4
 IncFour thisPCADDER(.in(PC),.out(PCp4));
 
+wire bTmissNT; // Branch predicted not taken that was supposed to be taken
+assign bTmissNT = ~DecodeStall & ((~ID_known_ctrl & BranchTaken)|(ID_known_ctrl & BranchTaken & ~ID_PredictedBranchDirection));
+wire bNTmissT; // Branch predicted taken that was supposed to be not taken
+assign bNTmissT = ~DecodeStall & ID_known_ctrl & Branch_ctrl & ~BranchTaken & ID_PredictedBranchDirection;
+wire jTmissNT; // Jump predicted not taken despite always being taken
+assign jTmissNT = (Jump_ctrl & ~ID_known_ctrl);
+
 assign JorRTarget = RegToPC_ctrl?RP1Out:JumpTarget; // JR/JALR else J/JAL
-assign BorPCp4Target = ((~ID_known_ctrl & BranchTaken)|(ID_known_ctrl & BranchTaken & ~ID_PredictedBranchDirection))?BranchTarget:((BTB_hit&(PredictedBranchDirection | BTB_is_jump))?BTBTargetPC:PCp4); // Branch and branched else PC+4
-assign NextPC = (Jump_ctrl & ~ID_known_ctrl)? JorRTarget:BorPCp4Target; // Jump side else branch side
+assign BorPCp4Target = bTmissNT?BranchTarget
+                         :bNTmissT?ID_PCp4
+                           :(BTB_hit&(PredictedBranchDirection | BTB_is_jump))?BTBTargetPC
+                             :PCp4; // Branch and branched else PC+4
+assign NextPC = (jTmissNT)? JorRTarget:BorPCp4Target; // Jump side else branch side
 
 assign NextInst = (IFlush|FetchInitiatesStall)?NOPbits:IBits;
 
@@ -342,7 +352,11 @@ SZExtender SEXT(.IMM16(IMM),.SZ(SZExtension_ctrl),.EXT32(ExtendedImmediate));
 // Generates Branch Target
 ScaledAdder thisBRANCHADDER(.Unscaled(ID_PCp4),.Scaled(ExtendedImmediate),.Out(BranchTarget));
 // Generates control signals
-CONTROL thisCONTROL(.Opcode(Opcode),.Function(FUNCT),.memToReg_ctrl(ID_memToReg_ctrl),.memWrite_ctrl(ID_memWrite_ctrl),.regWrite_ctrl(ID_regWrite_ctrl),.LBU_ctrl(ID_LBU_ctrl),.ByteSize_ctrl(ID_ByteSize_ctrl),.BranchSense_ctrl(BranchSense_ctrl),.ALUOpSelect_ctrl(ID_ALUOpSelect_ctrl),.SZExtension_ctrl(SZExtension_ctrl),.Jump_ctrl(Jump_ctrl),.RegToPC_ctrl(RegToPC_ctrl),.Branch_ctrl(Branch_ctrl),.Link_ctrl(ID_Link_ctrl),.RegDest_ctrl(ID_RegDest_ctrl),.SYSCALL_ctrl(ID_SYSCALL_ctrl),.UseRT_ctrl(ID_UseRT_ctrl),.readHILO_ctrl(ID_UseHILO_ctrl),.writeHILO_ctrl(ID_WriteHILO_ctrl));
+CONTROL thisCONTROL(.Opcode(Opcode),.Function(FUNCT),.memToReg_ctrl(ID_memToReg_ctrl),.memWrite_ctrl(ID_memWrite_ctrl),
+.regWrite_ctrl(ID_regWrite_ctrl),.LBU_ctrl(ID_LBU_ctrl),.ByteSize_ctrl(ID_ByteSize_ctrl),.BranchSense_ctrl(BranchSense_ctrl),
+.ALUOpSelect_ctrl(ID_ALUOpSelect_ctrl),.SZExtension_ctrl(SZExtension_ctrl),.Jump_ctrl(Jump_ctrl),.RegToPC_ctrl(RegToPC_ctrl),
+.Branch_ctrl(Branch_ctrl),.Link_ctrl(ID_Link_ctrl),.RegDest_ctrl(ID_RegDest_ctrl),.SYSCALL_ctrl(ID_SYSCALL_ctrl),
+.UseRT_ctrl(ID_UseRT_ctrl),.readHILO_ctrl(ID_UseHILO_ctrl),.writeHILO_ctrl(ID_WriteHILO_ctrl));
 
 // Data-independent muxes
 assign NRP1Forwarded = HazardDetected?32'h0000_0000:RP1Forwarded;
@@ -353,7 +367,8 @@ assign ID_OperandB = ID_UseRT_ctrl?RP2Forwarded:ExtendedImmediate;
 
 // Data-dependent control muxes
 assign BranchTaken = Branch_ctrl & (EQ ^ BranchSense_ctrl);
-assign IFlush = BranchTaken | Jump_ctrl;
+
+assign IFlush = bTmissNT | bNTmissT | jTmissNT;
 
 // ID-EX Pipeline Register
     
@@ -421,7 +436,7 @@ EXForwarding thisEXForwarding(.EX_RS(EX_RS), .EX_RT(EX_RT),
 
 // The ALU
 ALU thisALU(.OpSelect(EX_ALUOpSelect_ctrl),.ALUPortA(ALUPortA),.ALUPortB(ALUPortB),.ALUOut(ALUOut),
-.ALUSHAMT(EX_SHAMT),.CarryOut(CarryOut_not_used),.Overflow(Overflow_not_used));
+.ALUSHAMT(EX_SHAMT),.CarryOut(CarryOut_not_used),.Overflow(Overflow_not_used),.HIout(EX_HI));
 
 // EX-MEM Pipeline Register
 EX_MEM_PR thisEX_MEM_PR(.clk(clk),.en(~MemoryStall),
@@ -438,8 +453,7 @@ EX_MEM_PR thisEX_MEM_PR(.clk(clk),.en(~MemoryStall),
 .SYSCALL_in(ExecuteInitiatesStall?1'b0:EX_SYSCALL_ctrl),.MEM_SYSCALL(MEM_SYSCALL_ctrl),
 .DestReg_in(ExecuteInitiatesStall?5'b0:EX_RegWriteDest),.MEM_DestReg(MEM_RegWriteDest),
 .EX_WriteHILO_ctrl(ExecuteInitiatesStall?1'b0:EX_WriteHILO_ctrl),.MEM_WriteHILO_ctrl(MEM_WriteHILO_ctrl),
-.EX_UseHILO_ctrl(ExecuteInitiatesStall?1'b0:EX_UseHILO_ctrl),.MEM_UseHILO_ctrl(MEM_UseHILO_ctrl),
-.EX_HILO(ExecuteInitiatesStall?64'b0:EX_HILO),.MEM_HILO(MEM_HILO)
+.EX_HI(ExecuteInitiatesStall?64'b0:EX_HI),.MEM_HI(MEM_HI)
 );
 
 ////
@@ -461,7 +475,7 @@ wire DCacheWriteback;
 wire [31:0] DCacheWritebackAddress;
 wire [255:0] DCacheWritebackData;
                         // The Data Memory (IMEM is not coherent with DMEM)
-DCACHE thisDCACHE(.Address(MEM_UseHILO_ctrl?32'h0:MEM_ALUOut),.SValue(MEM_StoreValue),.RValue(MemOut),.ReadMem(MEM_memToReg_ctrl),.WriteMem(MEM_memWrite_ctrl),.LBU(MEM_LBU_ctrl),.ByteOp(MEM_ByteSize_ctrl),.clk(clk),.Ready(DMEM_READY),
+DCACHE thisDCACHE(.Address(MEM_ALUOut),.SValue(MEM_StoreValue),.RValue(MemOut),.ReadMem(MEM_memToReg_ctrl),.WriteMem(MEM_memWrite_ctrl),.LBU(MEM_LBU_ctrl),.ByteOp(MEM_ByteSize_ctrl),.clk(clk),.Ready(DMEM_READY),
 .DFill(DCacheFillRequest),.DFill_Address(DCacheFillAddress),.Fill_Contents(DCacheFillData),
 .WriteBack(DCacheWriteback),.WB_Address(DCacheWritebackAddress),.WB_Value(DCacheWritebackData));
 
@@ -476,7 +490,7 @@ MEM_WB_PR thisMEM_WB_PR(.clk(clk),.en(~WritebackStall),
 .SYSCALL_in(MemoryInitiatesStall?1'b0:MEM_SYSCALL_ctrl),
 .RegWriteDest_in(MemoryInitiatesStall?5'b00000:MEM_RegWriteDest),
 .MEM_WriteHILO_ctrl(MemoryInitiatesStall?1'b0:MEM_WriteHILO_ctrl),
-.MEM_HILO(MemoryInitiatesStall?64'b0:MEM_HILO),
+.MEM_HI(MemoryInitiatesStall?64'b0:MEM_HI),
 .WB_ALUout(WB_ALUOut),
 .WB_MemOut(WB_MemOut),
 .WB_PCp4(WB_PCp4),
@@ -486,7 +500,7 @@ MEM_WB_PR thisMEM_WB_PR(.clk(clk),.en(~WritebackStall),
 .WB_SYSCALL_ctrl(WB_SYSCALL_ctrl),
 .WB_RegWriteDest(WB_RegWriteDest),
 .WB_WriteHILO_ctrl(WB_WriteHILO_ctrl),
-.WB_HILO(WB_HILO)
+.WB_HI(WB_HI)
 );
 
 ////

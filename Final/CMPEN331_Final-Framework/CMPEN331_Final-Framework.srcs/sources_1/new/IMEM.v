@@ -26,14 +26,12 @@ module ICACHE(
     // Declare outputs dependant on index
     wire cacheHit;
     wire isValid;
-    wire [20:0] tagOut;
     wire [511:0] blockOut;
     assign isValid = valid[index];
-    assign tagOut = tag[index];
     assign blockOut = cacheContent[index];
     
     // Verify the hit
-    assign cacheHit = (tagIn == tagOut) & isValid;
+    assign cacheHit = (tagIn == tag[index]) & isValid;
     
     assign IFill = ~cacheHit; // Always ask main memory for data - FIX THIS, should be !Ready
     assign Ready = cacheHit; // Always ready - FIX THIS, should be 

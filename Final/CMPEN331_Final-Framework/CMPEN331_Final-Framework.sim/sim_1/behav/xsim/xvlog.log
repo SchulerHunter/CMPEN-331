@@ -1,0 +1,51 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/BHT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BHT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/BTB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BTB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/DMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCACHE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/DecodeForwarding.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DecodeForwarding
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/EQComp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EQComp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/EXForwarding.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXForwarding
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/EX_MEM_PR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM_PR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/HazardDetection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HazardDetection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/ID_EX_PR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX_PR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/IF_ID_PR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID_PR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/IMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ICACHE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/IncFour.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IncFour
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/MEM_WB_PR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB_PR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/MEMforwarding.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMForwarding
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/MainMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/REGFILE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGFILE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/SYSCALL_EMU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SYSCALL_EMU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/SZExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SZExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/ScaledAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ScaledAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/reg32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC32
+INFO: [VRFC 10-311] analyzing module R32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/reg64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HILO64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Git/CMPEN-331/Final/CMPEN331_Final-Framework/CMPEN331_Final-Framework.srcs/sources_1/new/TestWrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TestWrapper

@@ -22,6 +22,8 @@ module ALU(
     wire [63:0] MULTout;
     assign MULTout = {ALUPortASigned}*{ALUPortBSigned};
     
+    assign HIout = MULTUout[63:32];
+    
     always @(*)
     begin
     case (OpSelect)

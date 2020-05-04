@@ -49,6 +49,6 @@ module BHT(
     integer i;
     initial begin
         // Initialize memeory to weakly taken
-        for(i = 0; i < 2047; i=i+1) hTable[i] <= 2'b10;
+        for(i = 0; i < 2048; i=i+1) hTable[i] <= 2'b10;
     end
 endmodule

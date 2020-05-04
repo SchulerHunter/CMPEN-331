@@ -29,7 +29,7 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="480"/>
+    <Option Name="WTXSimLaunchSim" Val="541"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -293,24 +293,24 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_1/imports/new/reg.mem">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../NMM/reg.mem"/>
-          <Attr Name="ImportTime" Val="1588474678"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../NMM_16x16/reg.mem"/>
+          <Attr Name="ImportTime" Val="1588554961"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sim_1/imports/new/mem.mem">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../NMM/mem.mem"/>
-          <Attr Name="ImportTime" Val="1588474663"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../NMM_16x16/mem.mem"/>
+          <Attr Name="ImportTime" Val="1588558079"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sim_1/imports/new/hilo.mem">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../NMM/hilo.mem"/>
-          <Attr Name="ImportTime" Val="1588474658"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../NMM_2x2/hilo.mem"/>
+          <Attr Name="ImportTime" Val="1588557019"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -320,7 +320,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../NMM/pc.mem">
+      <File Path="$PPRDIR/../NMM_16x16/pc.mem">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>

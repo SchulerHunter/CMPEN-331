@@ -82,7 +82,7 @@ module DCACHE(
     assign WriteBack = DFill & ((MRU[index])?(valid0[index] & dirty0[index]):(valid1[index] & dirty1[index])); // should only be true if access caused an eviction
     
     assign WB_Address = WriteBack?({evictionTag,index,5'b00000}):32'h0; 
-    //assign WB_Value = WriteBack?(evictionData):256'h0;
+    assign WB_Value = WriteBack?(evictionData):256'h0;
 
     wire [15:0] ADDR16;
     assign ADDR16 = Address[15:0];
@@ -126,7 +126,7 @@ module DCACHE(
         endcase
         mergedVal=lwval;
         if (ByteOp) begin
-            case (WB_Address[1:0])
+            case (Address[1:0])
             2'b00: mergedVal={byteValue,lwval[23:0]};
             2'b01: mergedVal={lwval[31:24],byteValue,lwval[15:0]};
             2'b10: mergedVal={lwval[31:16],byteValue,lwval[7:0]};
@@ -159,7 +159,7 @@ module DCACHE(
             end
         end else begin
             if (cacheHit & WriteMem) begin
-                case (WB_Address[4:2])
+                case (Address[4:2])
                 3'b000: updateContents = {mergedVal,returnBlock[223:0]};
                 3'b001: updateContents = {returnBlock[255:224],mergedVal,returnBlock[191:0]};
                 3'b010: updateContents = {returnBlock[255:192],mergedVal,returnBlock[159:0]};

@@ -31,8 +31,8 @@ module EX_MEM_PR(
     output reg MEM_WriteHILO_ctrl,
     input EX_UseHILO_ctrl,
     output reg MEM_UseHILO_ctrl,
-    input EX_HILO, 
-    output reg [63:0] MEM_HILO
+    input EX_HI, 
+    output reg [31:0] MEM_HI
     );
     
 always @ (posedge clk)
@@ -53,7 +53,7 @@ begin
     MEM_DestReg<=DestReg_in;
     MEM_WriteHILO_ctrl <= EX_WriteHILO_ctrl;
     MEM_UseHILO_ctrl <= EX_UseHILO_ctrl;
-    MEM_HILO <= EX_HILO;
+    MEM_HI <= EX_HI;
 end
 end
 
@@ -73,7 +73,7 @@ begin
     MEM_DestReg<=5'b00000;
     MEM_WriteHILO_ctrl <= 1'b0;
     MEM_UseHILO_ctrl <= 1'b0;
-    MEM_HILO <= 64'b0;
+    MEM_HI <= 32'b0;
 end
 
 endmodule

@@ -20,8 +20,8 @@ module MEM_WB_PR(
     output reg [4:0] WB_RegWriteDest,
     input MEM_WriteHILO_ctrl,
     output reg WB_WriteHILO_ctrl,
-    input MEM_HILO, 
-    output reg [63:0] WB_HILO
+    input MEM_HI, 
+    output reg [31:0] WB_HI
     );
 
 always @ (posedge clk)
@@ -37,7 +37,7 @@ begin
     WB_SYSCALL_ctrl<=SYSCALL_in;
     WB_RegWriteDest<=RegWriteDest_in;
     WB_WriteHILO_ctrl <= MEM_WriteHILO_ctrl;
-    WB_HILO <= MEM_HILO;
+    WB_HI <= MEM_HI;
 end
 end
 
@@ -52,7 +52,7 @@ begin
     WB_SYSCALL_ctrl<=1'b0;
     WB_RegWriteDest<=5'b00000;
     WB_WriteHILO_ctrl <= 1'b0;
-    WB_HILO <= 64'b0;
+    WB_HI <= 32'b0;
 end
 
 endmodule
